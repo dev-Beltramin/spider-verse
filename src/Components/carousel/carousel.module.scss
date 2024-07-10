@@ -1,0 +1,30 @@
+.container{
+ display: flex;
+ margin-top: 40px;
+}
+
+.carousel{
+    position: relative;
+    flex: 1;
+    max-width: 130vh;
+    left: -10%;
+}
+
+.details{
+    position: relative;
+    flex: 1;
+}
+
+.hero{
+    height: 100%;
+    width: 400px;
+    position: absolute;
+    left: 0;
+
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center right;
+    }
+}

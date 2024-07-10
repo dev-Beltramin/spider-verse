@@ -1,0 +1,61 @@
+@import "../../app//variables.scss";
+
+.container {
+  max-width: $max-width;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  h2 {
+    font-size: 23vw;
+    margin: 0;
+    position: absolute;
+  }
+}
+
+.imageContainer {
+  position: relative;
+  top: 250px;
+  display: flex;
+  justify-content: space-between;
+  &.spider-man-616 {
+    height: $spider-man-616;
+  }
+  &.mulher-aranha-65 {
+    height: $mulher-aranha-65;
+  }
+  &.spider-man-1610 {
+    height: $spider-man-1610;
+  }
+  &.sp-dr-14512 {
+    height: $sp-dr-14512;
+  }
+  &.spider-ham-8311 {
+    height: $spider-ham-8311;
+  }
+  &.spider-man-90214 {
+    height: $spider-man-90214;
+  }
+  &.spider-man-928 {
+    height: $spider-man-928;
+  }
+  a {
+    width: 100%;
+   
+    height: 100%;
+    img {
+      width: 100%;
+      
+      height: 100%;
+      object-fit: contain;
+      object-position: bottom;
+      cursor: pointer;
+    }
+  }
+}

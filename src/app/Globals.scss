@@ -1,0 +1,36 @@
+@import "./variables.scss";
+
+
+:root {
+  height: 100vh;
+  background: $background;
+  transition: background 1s ease-in-out;
+  background-size: cover;
+
+  &:not(.hero-page)::before {
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+ 
+  }
+
+}
+
+body{
+   position: relative;
+   color: white;
+   margin: auto;
+   width: $max-width;
+   height: calc(100vh - 3.5rem);
+   overflow: hidden;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 3rem 0;
+  z-index: 4;
+  position: relative;
+}
