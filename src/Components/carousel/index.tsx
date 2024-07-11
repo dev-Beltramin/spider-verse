@@ -7,7 +7,7 @@ import CarouselDetails from "./carouselDetails"
 import HeroPicture from "../heroPicture"
 
 import styles from './carousel.module.scss'
-import carouselModification, { enumPosition } from "../carouselModification"
+import carouselModification, { carouselMobile, enumPosition } from "../carouselModification"
 
 interface propsDetails {
   heroes: heroesData[]
@@ -40,7 +40,11 @@ const Carousel = ({ heroes, activeId }: propsDetails) => {
     "spider-man-928": new Audio('/songs/spider-man-928.mp3')
   }), [])
 
+ 
 
+  const handleTouchStart =(e:React.TouchEvent<HTMLDivElement>)=>{
+     
+  }
 
   useEffect(() => {
 
@@ -104,6 +108,7 @@ const Carousel = ({ heroes, activeId }: propsDetails) => {
               animate={{ x: 0, ...carouselModification(position) }}
               transition={{ duration: 0.8 }}
               exit={{ x: 0, opacity: 0, scale: 1 }}
+             
 
             >
               <HeroPicture hero={item} />

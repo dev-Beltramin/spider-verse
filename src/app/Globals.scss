@@ -25,6 +25,10 @@ body{
    width: $max-width;
    height: calc(100vh - 3.5rem);
    overflow: hidden;
+
+   @media screen and (max-width:768px){
+    width: 100%;
+   }
 }
 
 header{
@@ -33,4 +37,13 @@ header{
   margin: 3rem 3rem 0;
   z-index: 4;
   position: relative;
+
+  @media screen and (max-width:768px){
+    width:90%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top:32px;
+  
+  }
 }

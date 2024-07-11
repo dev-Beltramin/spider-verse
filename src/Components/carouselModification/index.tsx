@@ -5,6 +5,11 @@ export enum enumPosition {
     BACK = 2
 }
 
+export enum enPositionMobile {
+    FRONT = 0,
+    BACK = 1
+}
+
 
 
 export const carouselModification = (position: enumPosition) => {
@@ -35,4 +40,25 @@ export const carouselModification = (position: enumPosition) => {
     }
 }
 
+
+const carouselMobile = (position: enPositionMobile) => {
+    if (position === enPositionMobile.FRONT) {
+        return {
+            zIndex: 2,
+            top: "-10p%",
+            scale: "1.2"
+        }
+    }
+
+    return {
+        zIndex: 1,
+        filter: 'blur(10px)',
+        scale: 0.6,
+        top: "-20%",
+        left: "160px"
+
+    }
+}
+
 export default carouselModification
+export {carouselMobile}
